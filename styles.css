@@ -2,11 +2,26 @@ body {
   margin: 0px;
   background-image: url('background_pizza_plazzen.jpg');
   background-attachment: fixed;
+  background-size: 100%;
 }
+
+h1 {
+  font-size: 400%;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 300%;
+  color: white;
+  text-align: center;
+}
+
 /* HEADER */
 .header {
-  position: sticky;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: sticky;
   width: 924px;
   height: 162px;
   margin-top: 30px;
@@ -17,33 +32,76 @@ body {
 
 .header_nav {
   display: flex;
-  list-style-type: none;
+  padding: 15px;
   justify-content: space-between;
-  font-size: 175%;
+  list-style-type: none;
+  background-color: rgb(191, 202, 212);
+  text-align: center;
+  font-size: 100%;
+
 }
 /* MAIN */
+
+  /* Intro */
 .hero_intro {
   display: flex;
   flex-direction: column;
+  text-align: center;
+
 }
 .hero_title {
-  margin: 0px;
+  margin: 15px;
   color: white;
   font-size: 300%;
 }
 .hero_title_flavour {
   margin: 0px;
-  color: white;
   font-size: 250%;
+}
+
+  /* Pizzas, offers & reviews */
+
+  .hero_layout {
+    box-sizing: border-box;
+    height: 611px;
+    width: 842px;
+    padding: 10px;
+    margin-left: 91px;
+    margin-top: 50px;
+    background-color: #B1AE9A;
+    opacity: 55%;
+  }
+
+  /* About .main_about {}*/
+.main_about_layout {
+  box-sizing: border-box;
+  height: 611px;
+  width: 842px;
+  padding: 10px;
+  margin-left: 91px;
+  margin-top: 50px;
+  background-color: #B1AE9A;
+  opacity: 55%;
+}
+  /* Gallary .main_gallary {}*/
+.main_gallary_layout {
+  box-sizing: border-box;
+  height: 611px;
+  width: 842px;
+  padding: 10px;
+  margin-left: 91px;
+  margin-top: 50px;
+  background-color: #B1AE9A;
+  opacity: 55%;
 }
 
 /* FOOTER */
 
 .footer {
-  position : absolute;
-  bottom : 0;
-
+  position : bottom;
+  /* bottom : 0; */
   display: flex;
+  flex-direction: column;
   width: 1024px;
   height: 60px;
   margin-top: 0px;
