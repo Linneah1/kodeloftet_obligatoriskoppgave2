@@ -1,4 +1,52 @@
 body {
-  background-image: url('star-solid.gif');
+  margin: 0px;
+  background-image: url('background_pizza_plazzen.jpg');
   background-attachment: fixed;
+}
+/* HEADER */
+.header {
+  position: sticky;
+  display: flex;
+  width: 924px;
+  height: 162px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: aliceblue;
+}
+
+.header_nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: 175%;
+}
+/* MAIN */
+.hero_intro {
+  display: flex;
+  flex-direction: column;
+}
+.hero_title {
+  margin: 0px;
+  color: white;
+  font-size: 300%;
+}
+.hero_title_flavour {
+  margin: 0px;
+  color: white;
+  font-size: 250%;
+}
+
+/* FOOTER */
+
+.footer {
+  position : absolute;
+  bottom : 0;
+
+  display: flex;
+  width: 1024px;
+  height: 60px;
+  margin-top: 0px;
+  margin-right: 50px;
+  background-color: rgb(71, 132, 186);
 }
