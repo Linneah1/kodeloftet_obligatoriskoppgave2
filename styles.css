@@ -22,12 +22,15 @@ h2 {
   flex-direction: column;
   text-align: center;
   position: sticky;
+  top: 0;
   width: 924px;
   height: 162px;
   margin-top: 30px;
   margin-left: 50px;
   margin-right: 50px;
+  border-radius: 10px;
   background-color: aliceblue;
+  opacity: 95%;
 }
 
 .header_nav {
@@ -51,6 +54,7 @@ h2 {
 }
 .hero_title {
   margin: 15px;
+  margin-top: 200px;
   color: white;
   font-size: 300%;
 }
@@ -68,6 +72,7 @@ h2 {
     padding: 10px;
     margin-left: 91px;
     margin-top: 50px;
+    border-radius: 10px;
     background-color: #B1AE9A;
     opacity: 55%;
   }
@@ -80,31 +85,45 @@ h2 {
   padding: 10px;
   margin-left: 91px;
   margin-top: 50px;
+  border-radius: 10px;
   background-color: #B1AE9A;
   opacity: 55%;
 }
-  /* Gallary .main_gallary {}*/
-.main_gallary_layout {
+  /* Gallery .main_gallery {}*/
+.main_gallery_layout {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   height: 611px;
   width: 842px;
   padding: 10px;
   margin-left: 91px;
   margin-top: 50px;
+  border-radius: 10px;
   background-color: #B1AE9A;
-  opacity: 55%;
+  opacity: 0.55;
+}
+
+.main_gallery_picture {
+  width: 45%;
+  height: 45%;
+  padding: 5px;
+  border-radius: 3%;
+  opacity: 1;
 }
 
 /* FOOTER */
 
 .footer {
-  position : bottom;
-  /* bottom : 0; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
   width: 1024px;
-  height: 60px;
-  margin-top: 0px;
-  margin-right: 50px;
+  height: 100px;
+  padding: 5px;
+  margin-top: 50px;
   background-color: rgb(71, 132, 186);
 }
