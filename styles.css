@@ -6,12 +6,12 @@ body {
 }
 
 h1 {
-  font-size: 400%;
+  font-size: 4rem;
   margin: 0px;
 }
 
 h2 {
-  font-size: 300%;
+  font-size: 3rem;
   color: white;
   text-align: center;
 }
@@ -30,7 +30,7 @@ h2 {
   margin-right: 50px;
   border-radius: 10px;
   background-color: aliceblue;
-  opacity: 95%;
+  opacity: 75%;
 }
 
 .header_nav {
@@ -40,7 +40,6 @@ h2 {
   list-style-type: none;
   background-color: rgb(191, 202, 212);
   text-align: center;
-  font-size: 100%;
 
 }
 /* MAIN */
@@ -56,40 +55,92 @@ h2 {
   margin: 15px;
   margin-top: 200px;
   color: white;
-  font-size: 300%;
 }
 .hero_title_flavour {
   margin: 0px;
-  font-size: 250%;
+  padding-right: 2rem;
+  text-align:right;
 }
 
   /* Pizzas, offers & reviews */
-
   .hero_layout {
-    box-sizing: border-box;
-    height: 611px;
-    width: 842px;
-    padding: 10px;
-    margin-left: 91px;
     margin-top: 50px;
-    border-radius: 10px;
+    margin-bottom: 50px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+  }
+  .hero_newsoffers {
+    box-sizing: border-box;
+    height: 609px;
+    width: 424px;
+    padding: 10px;
+    /* margin-left: 85px; */
+    /* margin-right: 48px; */
+    border-radius: 4px;
+    background-color: #B1AE9A;
+    opacity: 55%;
+  }
+  .hero_hot_items {
+    box-sizing: border-box;
+    height: 290px;
+    width: 383px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #B1AE9A;
+    opacity: 55%;
+  }
+  .hero_reviews {
+    box-sizing: border-box;
+    height: 290px;
+    width: 383px;
+    padding: 10px;
+    border-radius: 4px;
     background-color: #B1AE9A;
     opacity: 55%;
   }
 
-  /* About .main_about {}*/
+  /* About */
+.main_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .main_about_layout {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+.main_about_location {
+box-sizing: border-box;
+height: 611px;
+width: 414px;
+padding: 10px;
+border-radius: 10px;
+background-color: #B1AE9A;
+opacity: 55%;
+}
+.main_about_text {
   box-sizing: border-box;
   height: 611px;
-  width: 842px;
+  width: 414px;
   padding: 10px;
-  margin-left: 91px;
-  margin-top: 50px;
   border-radius: 10px;
   background-color: #B1AE9A;
   opacity: 55%;
+  }
+
+  /* Gallery */
+.main_gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-  /* Gallery .main_gallery {}*/
 .main_gallery_layout {
   display: flex;
   flex-wrap:wrap;
@@ -99,8 +150,6 @@ h2 {
   height: 611px;
   width: 842px;
   padding: 10px;
-  margin-left: 91px;
-  margin-top: 50px;
   border-radius: 10px;
   background-color: #B1AE9A;
   opacity: 0.55;
@@ -111,7 +160,7 @@ h2 {
   height: 45%;
   padding: 5px;
   border-radius: 3%;
-  opacity: 1;
+  opacity: 100%;
 }
 
 /* FOOTER */

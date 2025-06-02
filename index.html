@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+  <!-- Only works in 1024x currently -->
   <body>
     <header class="header">
       <h1 class="header_title_text">Pizza Plazzen</h1>
@@ -17,9 +18,9 @@
         <li>Desserts</li>
         <li>About us</li>
       </ul>
-      <div class="header_cart"></div>
-      <div class="header_login"></div>
-      <div class="header_new_user"></div>
+      <aside class="header_cart"></aside>
+      <aside class="header_login"></aside>
+      <aside class="header_new_user"></aside>
     </header>
     <main>
         <section class="hero">
@@ -27,9 +28,9 @@
             <h2 class="hero_title">Best Pizza in town!</h2>
             <h2 class="hero_title_flavour">Fresh pizza dough made every day <3</h2>
             <section class="hero_layout">
-              <article class="hero_newsoffers"></article>
-              <aside class="hero_hot_items"></aside>
-              <aside class="hero_reviews"></aside>
+              <div class="hero_newsoffers"></div>
+              <div class="hero_hot_items"></div>
+              <div class="hero_reviews"></div>
             </section>
           </section>
         </section>
@@ -37,7 +38,8 @@
         <section class="main_about">
           <h2 class="main_about_title">Our pizza philosophy and where you can find us!</h2>
           <section class="main_about_layout">
-            <article class="main_about_location"></article>
+            <div class="main_about_location"></div>
+            <section class="main_about_text"></section>
             <article class="main_about_philosophy"></article>
             <article class="main_about_story"></article>
             <aside class="main_about_mediacontact"></aside>
