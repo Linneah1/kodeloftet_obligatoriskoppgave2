@@ -8,12 +8,25 @@ body {
 h1 {
   font-size: 4rem;
   margin: 0px;
+  font-family: "Irish Grover", system-ui;
 }
 
 h2 {
   font-size: 3rem;
   color: white;
   text-align: center;
+  font-family: "Irish Grover", system-ui;
+}
+
+h3 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-family: "Irish Grover", system-ui;
+}
+
+p {
+  font-family: "Irish Grover", system-ui;
 }
 
 /* HEADER */
@@ -53,7 +66,7 @@ h2 {
 }
 .hero_title {
   margin: 15px;
-  margin-top: 200px;
+  margin-top: 150px;
   color: white;
 }
 .hero_title_flavour {
@@ -64,38 +77,100 @@ h2 {
 
   /* Pizzas, offers & reviews */
   .hero_layout {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;    
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 1rem;
     justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    /* display: flex; */
+    /* flex-wrap: wrap;     */
+    /* justify-content: center; */
   }
   .hero_newsoffers {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
     box-sizing: border-box;
     height: 609px;
     width: 424px;
     padding: 10px;
+    margin: 5px;
     /* margin-left: 85px; */
     /* margin-right: 48px; */
     border-radius: 4px;
     background-color: #B1AE9A;
     opacity: 55%;
   }
+  .hero_newsoffers_boxes {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(194, 155, 129, 0.586)
+
+  }
+.hero_newsoffers_box1 {
+  display: flex;
+  justify-content:space-between;
+  padding-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.hero_newsoffers_box2 {
+  display: flex;
+  justify-content:space-between;
+  padding-right: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.hero_newsoffers_box3 {
+  display: flex;
+  justify-content:space-between;
+  padding-right: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.hero_newsoffers_box4 {
+  display: flex;
+  justify-content:space-between;
+  padding-right: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+  .hero_newsoffers_img {
+    width: 40%;
+    height: 40%;
+    border-radius: 2px;
+  }
   .hero_hot_items {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
     box-sizing: border-box;
     height: 290px;
     width: 383px;
     padding: 10px;
+    margin: 5px;
     border-radius: 4px;
     background-color: #B1AE9A;
     opacity: 55%;
   }
   .hero_reviews {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
     box-sizing: border-box;
     height: 290px;
     width: 383px;
     padding: 10px;
+    margin: 5px;
     border-radius: 4px;
     background-color: #B1AE9A;
     opacity: 55%;
@@ -110,9 +185,10 @@ h2 {
 }
 .main_about_layout {
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
-align-items: center;
-gap: 1rem;
+align-items:center;
+/* gap: 1rem; */
 }
 
 .main_about_location {
@@ -120,15 +196,24 @@ box-sizing: border-box;
 height: 611px;
 width: 414px;
 padding: 10px;
+margin-left: 5px;
+margin-right: 5px;
 border-radius: 10px;
 background-color: #B1AE9A;
 opacity: 55%;
+}
+
+.main_about_location_image {
+  width: 100%;
+  height: 100%;
 }
 .main_about_text {
   box-sizing: border-box;
   height: 611px;
   width: 414px;
   padding: 10px;
+  margin-left: 5px;
+margin-right: 5px;
   border-radius: 10px;
   background-color: #B1AE9A;
   opacity: 55%;
@@ -167,8 +252,9 @@ opacity: 55%;
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
   width: 1024px;
   height: 100px;
